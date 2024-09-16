@@ -45,6 +45,7 @@ namespace Project1 {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Button^ button2;
 
 	private:
 		/// <summary>
@@ -68,8 +69,10 @@ namespace Project1 {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
+			this->tabPage2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -149,6 +152,7 @@ namespace Project1 {
 			// 
 			this->tabPage2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->tabPage2->Controls->Add(this->button2);
 			this->tabPage2->Location = System::Drawing::Point(4, 29);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
@@ -166,6 +170,15 @@ namespace Project1 {
 			this->tabPage3->Text = L"Завдання 3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(248, 231);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(160, 50);
+			this->button2->TabIndex = 0;
+			this->button2->Text = L"button2";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -177,6 +190,7 @@ namespace Project1 {
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
+			this->tabPage2->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
